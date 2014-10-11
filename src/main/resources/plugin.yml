@@ -1,0 +1,15 @@
+name: DiscoArmor
+author: defabricated
+version: 1.0
+main: pl.defabricated.discoarmor.ArmorPlugin
+depend: [ProtocolLib]
+commands:
+    armor:
+        description: "Zmiana trybu disco zbroi."
+        aliases: [disco]
+        permission: discoarmor.manage
+        usage: "§c/armor random/ultra/smooth/gray/usun"
+permissions:
+    discoarmor.manage:
+        description: "Dostep do komendy /armor."
+        default: op
