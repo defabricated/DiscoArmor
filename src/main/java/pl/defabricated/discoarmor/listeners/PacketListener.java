@@ -17,7 +17,7 @@ public class PacketListener extends PacketAdapter {
     ArmorPlugin plugin;
 
     public PacketListener(ArmorPlugin plugin) {
-        super(plugin, ConnectionSide.SERVER_SIDE, Packets.Server.PLAYER_INFO);
+        super(plugin, ConnectionSide.SERVER_SIDE, Packets.Server.ENTITY_EQUIPMENT);
         this.plugin = plugin;
         plugin.protocolManager.addPacketListener(this);
     }
